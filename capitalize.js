@@ -18,7 +18,7 @@ function capitalize(sentence, minLenght = 2, ...exceptions) {
   throw new Error(`O argumento "sentence" não pode estar vazio.`);
  }
 
- if (typeof minLenght == "number") {
+ if (typeof minLenght != "number") {
   throw new TypeError(`O argumento "minLenght" deveria ser do tipo "number".`);
  }
 

@@ -48,7 +48,7 @@ function capitalize(sentence, minLenght = 2, ...exceptions) {
    return firstLetter + otherLetter;
   }
 
-  if (word.length <= 2) {
+  if (word.length <= minLenght) {
    return word.toLowerCase();
   }
   
